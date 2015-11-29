@@ -17,7 +17,7 @@ npm install -g git+https://github.com/Almouro/generator-react-native-android-mod
 Run the generator
 ```shell
 mkdir my-awesome-module && cd my-awesome-module
-yo generator-react-native-android-module
+yo react-native-android-module
 ```
 
 ## To Do

@@ -22,4 +22,4 @@ yo react-native-android-module
 
 ## To Do
 
-* [ ] Add prompt for list of permissions to add in the manifest
+See [the list](https://github.com/Almouro/generator-react-native-android-module/issues/2)

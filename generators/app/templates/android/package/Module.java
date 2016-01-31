@@ -26,6 +26,6 @@ class <%= moduleName %>Module extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void <%= reactMethodName %>(Callback onSuccess, Callback onFailure) {
-
+        onSuccess.invoke("Hello World!");
     }
 }

@@ -1,1 +1,1 @@
-# <%= moduleName %>
+# <%= npmModuleName %>

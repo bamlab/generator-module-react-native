@@ -1,0 +1,6 @@
+{
+  "name": "<%= npmModuleName %>",
+  "peerDependencies": {
+    "react-native": ">=v<%= reactNativeVersion %>"
+  }
+}

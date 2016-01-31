@@ -6,6 +6,7 @@
     "generators/app"
   ],
   "dependencies": {
+    "init-package-json": "^1.9.3",
     "mkdirp": "^0.5.1",
     "yeoman-generator": "^0.21.1"
   },

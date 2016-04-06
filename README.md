@@ -8,10 +8,10 @@ Install Yeoman:
 npm install -g yo
 ```
 
-Install the generator (unpublished for now)
+Install the generator
 
 ```shell
-npm install -g git+https://github.com/Almouro/generator-react-native-module.git
+npm install -g generator-react-native-module
 ```
 
 Run the generator
@@ -22,4 +22,4 @@ yo react-native-module
 
 ## To Do
 
-See [the list](https://github.com/Almouro/generator-react-native-module/issues/2)
+See [the list](https://github.com/bamlab/generator-react-native-module/issues/2)

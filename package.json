@@ -12,7 +12,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Almouro/generator-react-native-android-module.git"
+    "url": "git+https://github.com/bamlab/generator-react-native-android-module.git"
   },
   "keywords": [
     "yeoman-generator",
@@ -22,7 +22,7 @@
   "author": "Almouro <alexandrem@bamlab.fr> (http://bamlab.fr)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Almouro/generator-react-native-android-module/issues"
+    "url": "https://github.com/bamlab/generator-react-native-android-module/issues"
   },
-  "homepage": "https://github.com/Almouro/generator-react-native-android-module#readme"
+  "homepage": "https://github.com/bamlab/generator-react-native-android-module#readme"
 }

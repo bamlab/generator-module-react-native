@@ -11,13 +11,13 @@ npm install -g yo
 Install the generator
 
 ```shell
-npm install -g generator-react-native-module
+npm install -g generator-module-react-native
 ```
 
 Run the generator
 ```shell
 mkdir my-awesome-module && cd my-awesome-module
-yo react-native-module
+yo module-react-native
 ```
 
 ## To Do

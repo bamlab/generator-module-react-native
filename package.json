@@ -1,6 +1,6 @@
 {
-  "name": "generator-react-native-android-module",
-  "version": "0.0.1",
+  "name": "generator-module-react-native",
+  "version": "0.0.2",
   "description": "Generate react-native android module boilerplate",
   "files": [
     "generators/app"
@@ -12,7 +12,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bamlab/generator-react-native-android-module.git"
+    "url": "git+https://github.com/bamlab/generator-module-react-native.git"
   },
   "keywords": [
     "yeoman-generator",
@@ -22,7 +22,7 @@
   "author": "Almouro <alexandrem@bamlab.fr> (http://bamlab.fr)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bamlab/generator-react-native-android-module/issues"
+    "url": "https://github.com/bamlab/generator-module-react-native/issues"
   },
-  "homepage": "https://github.com/bamlab/generator-react-native-android-module#readme"
+  "homepage": "https://github.com/bamlab/generator-module-react-native#readme"
 }

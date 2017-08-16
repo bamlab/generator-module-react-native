@@ -1,5 +1,1 @@
-#import "RCTBridge.h"
-
-@interface <%= moduleName %> : NSObject <RCTBridgeModule>
-
-@end
+#import <React/RCTBridgeModule.h>

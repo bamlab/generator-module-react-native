@@ -1,14 +1,7 @@
-#import "RCT<%= moduleName %>.h"
+#import <React/RCTBridgeModule.h>
 
-@implementation <%= moduleName %>
+@interface RCT_EXTERN_MODULE(<%= moduleName %>, NSObject)
 
-RCT_EXPORT_MODULE();
-
-RCT_REMAP_METHOD(<%= reactMethodName %>,
-                 resolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject)
-{
-    resolve(@"Hello World!");
-}
+RCT_EXTERN_METHOD(<%= reactMethodName %>:(NSString *)id)
 
 @end

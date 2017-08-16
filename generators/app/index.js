@@ -4,6 +4,7 @@ var mkdirp = require('mkdirp');
 
 var writeCommonPart = function(generator) {
   generator.directory('common/', '.');
+  generator.copy('common/index.js', 'index.js');
 };
 
 var setupAndroidPackageFolders = function(packageName) {
@@ -25,10 +26,10 @@ var writeAndroidPart = function(generator) {
 };
 
 var writeIOSPart = function(generator) {
-  generator.copy('ios/index.ios.js', 'index.ios.js');
   var iosFiles = [
     'ios/RCTModule/RCTModule.h',
     'ios/RCTModule/RCTModule.m',
+    'ios/RCTModule/RCTModule.swift',
     'ios/RCTModule.xcodeproj/project.pbxproj'
   ];
 
@@ -54,12 +55,6 @@ module.exports = generators.Base.extend({
         name    : 'reactMethodName',
         message : 'Your first react method name',
         default : appName,
-      },
-      {
-        type    : 'input',
-        name    : 'reactNativeVersion',
-        message : 'The react native version you want to use',
-        default : '0.14.+',
       },
       {
         type    : 'input',

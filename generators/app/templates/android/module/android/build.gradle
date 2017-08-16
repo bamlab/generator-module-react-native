@@ -1,23 +1,41 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    //allow publish all variants of a library (by default its false)
+    //so we can include in our projects the library dependencies with different variants
+    publishNonDefault true
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
+
         release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        beta {
+            initWith release
+        }
+
+        debug {
             minifyEnabled false
         }
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.1.0'
-    compile 'com.facebook.react:react-native:<%= reactNativeVersion %>'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.facebook.react:react-native:+'
+
+    debugCompile project(path: ':android-core-library', configuration: 'debug')
+    releaseCompile project(path: ':android-core-library', configuration: 'release')
+    betaCompile project(path: ':android-core-library', configuration: 'beta')
 }

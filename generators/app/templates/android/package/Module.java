@@ -5,7 +5,7 @@ import android.content.Context;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.Promise;
 
 class <%= moduleName %>Module extends ReactContextBaseJavaModule {
     private Context context;
@@ -25,7 +25,7 @@ class <%= moduleName %>Module extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void <%= reactMethodName %>(Callback onSuccess, Callback onFailure) {
-        onSuccess.invoke("Hello World!");
+    public void <%= reactMethodName %>(String id, Promise promise) {
+        promise.resolve(true);
     }
 }
